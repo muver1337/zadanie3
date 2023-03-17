@@ -2,7 +2,7 @@ let eventBus = new Vue()
 
 Vue.component('allcolumn', {
     template: `
-<div class="cols">
+        <div class="cols">
             <create></create>
             <div class="tabs-back">
             </div>   
