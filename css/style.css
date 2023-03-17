@@ -1,0 +1,133 @@
+#app{
+    text-align: center;
+    padding: 0 15px 50px;
+}
+body {
+    background-image: url(../img/phonk4.jpg);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.create{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tasks{
+    display: flex;
+    list-style-type: disc;
+    align-items: center;
+    justify-content: center;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+.error{
+    color: red;
+}
+
+.cards{
+    list-style-type: none;
+    width: 95%;
+    background-color: burlywood;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+input {
+    padding: 10px 15px;
+    text-wrap: normal;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    border-radius: 10px;
+}
+
+p {
+    text-wrap: normal;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    background-color: #fff;
+}
+
+#cols {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col {
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.col-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.cols-wrapper {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.flex-revers {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.p-title {
+    font-size:27px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top:auto;
+}
+
+.P {
+    cursor: pointer
+}
+
+.cols-wrapper{
+    min-height: 680px;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23em
+}
