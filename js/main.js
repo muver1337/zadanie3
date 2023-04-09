@@ -90,12 +90,12 @@ Vue.component('column1',{
             <ul class="tab-li">
                 <li v-for="tab in column_1" v-if="tab.priori == 1">
                     <div class="separator"></div>
-                    <a @click="deleteTab(tab)">Удалить</a> &emsp; <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                    <a @click="deleteTab(tab)">Удалить</a> &emsp; <a @click="tab.editButton = true">Редактировать</a><br>                        
                         <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                         <li v-if="tab.editButton === true">
                             <form @submit.prevent="updateTab(tab)">
@@ -111,12 +111,12 @@ Vue.component('column1',{
                 </li>
                 <li v-for="tab in column_1" v-if="tab.priori == 2">
                     <div class="separator"></div>
-                    <a @click="deleteTab(tab)">Удалить</a> &emsp; <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                        <a @click="deleteTab(tab)">Удалить</a> &emsp; <a @click="tab.editButton = true">Редактировать</a><br>                        
                         <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                         <li v-if="tab.editButton === true">
                             <form @submit.prevent="updateTab(tab)">
@@ -132,12 +132,12 @@ Vue.component('column1',{
                 </li>
                 <li v-for="tab in column_1" v-if="tab.priori == 3">
                     <div class="separator"></div>
-                    <a @click="deleteTab(tab)">Удалить</a> &emsp; <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                        <a @click="deleteTab(tab)">Удалить</a> &emsp; <a @click="tab.editButton = true">Редактировать</a><br>
                         <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                         <li v-if="tab.editButton === true">
                             <form @submit.prevent="updateTab(tab)">
@@ -186,12 +186,12 @@ Vue.component('column2',{
             <ul class="tab-li">
                 <li v-for="tab in column_2" v-if="tab.priori == 1">
                     <div class="separator"></div>
-                    <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                        <a @click="tab.editButton = true">Редактировать</a><br>                        
                             <li v-if="tab.reason != null" v-for="res in tab.reason">Проблема: {{res}}</li>
                             <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                             <li v-if="tab.editButton === true">
@@ -208,12 +208,12 @@ Vue.component('column2',{
                 </li>
                 <li v-for="tab in column_2" v-if="tab.priori == 2">
                     <div class="separator"></div>
-                    <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                        <a @click="tab.editButton = true">Редактировать</a><br>
                         <li v-if="tab.reason != null" v-for="res in tab.reason">Проблема: {{res}}</li>
                         <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                         <li v-if="tab.editButton === true">
@@ -230,12 +230,12 @@ Vue.component('column2',{
                 </li>
                 <li v-for="tab in column_2" v-if="tab.priori == 3">
                     <div class="separator"></div>
-                    <a @click="deleteTab(tab)">Удалить</a> &emsp; <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                        <a @click="deleteTab(tab)">Удалить</a> &emsp; <a @click="tab.editButton = true">Редактировать</a><br>
                         <li v-if="tab.reason != null" v-for="res in tab.reason">Проблема: {{res}}</li>
                         <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                         <li v-if="tab.editButton === true">
@@ -282,12 +282,12 @@ Vue.component('column3',{
             <ul class="tab-li">
                 <li v-for="tab in column_3" v-if="tab.priori == 1">
                     <div class="separator"></div>
-                    <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                        <a @click="tab.editButton = true">Редактировать</a><br>
                         <li v-if="tab.reason != null" v-for="res in tab.reason">Проблема: {{res}}</li>
                         <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                         <li v-if="tab.editButton === true">
@@ -311,12 +311,12 @@ Vue.component('column3',{
                 </li>
                 <li v-for="tab in column_3" v-if="tab.priori == 2">
                     <div class="separator"></div>
-                    <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                        <a @click="tab.editButton = true">Редактировать</a><br>
                         <li v-if="tab.reason != null" v-for="res in tab.reason">Проблема: {{res}}</li>
                         <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                         <li v-if="tab.editButton === true">
@@ -340,12 +340,12 @@ Vue.component('column3',{
                 </li>
                 <li v-for="tab in column_3" v-if="tab.priori == 3">
                     <div class="separator"></div>
-                    <a @click="tab.editButton = true">Редактировать</a><br>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
                         <li>Дедлайн: {{tab.deadline}}</li>
+                        <a @click="tab.editButton = true">Редактировать</a><br>
                         <li v-if="tab.reason != null" v-for="res in tab.reason">Проблема: {{res}}</li>
                         <li v-if="tab.edit != null">Последние изменение: {{tab.edit}}</li>
                         <li v-if="tab.editButton === true">
@@ -411,7 +411,7 @@ Vue.component('column4',{
             <ul class="tab-li">
                 <li v-for="tab in column_4" v-if="tab.priori == 1">
                     <div class="separator"></div>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
@@ -423,7 +423,7 @@ Vue.component('column4',{
                 </li>
                 <li v-for="tab in column_4" v-if="tab.priori == 2">
                     <div class="separator"></div>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>
@@ -435,7 +435,7 @@ Vue.component('column4',{
                 </li>
                 <li v-for="tab in column_4" v-if="tab.priori == 3">
                     <div class="separator"></div>
-                    <p class="tab-title">{{tab.title}}</p>
+                    <p>{{tab.title}}</p>
                     <ul class="tab-task">
                         <li>Описание: {{tab.description}}</li>
                         <li>Дата создания: {{tab.date}}</li>

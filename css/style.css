@@ -51,7 +51,9 @@ button {
 }
 
 #description{
-    resize: none;
+    height: 80px;
+    width: 210px;
+    border-radius: 15px;
 }
 #reason{
     resize: none;
@@ -102,11 +104,12 @@ button {
 
 .tab-li{
     background-color: rgba(71, 79, 89, 0.51);
-    margin-left: 20px;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     list-style-type: none;
     margin-bottom: 20px;
+    margin-left: 20px;
+    padding-left: auto;
 }
 
 a{
@@ -126,8 +129,8 @@ a{
     white-space: pre-wrap;
 }
 .separator{
-    height: 20px;
     width: 310px;
     margin-left: -40px;
     background-color: aliceblue;
 }
+
